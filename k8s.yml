@@ -5,7 +5,7 @@ metadata:
   labels:
     app: service-polyglot
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: service-polyglot
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: service-polyglot
-        image: polyglotstudy/ms-account-v1:latest
+        image: polyglotstudy/devops-ms-account:latest
         ports:
         - containerPort: 80 #change port value 8080 on microservice development
         imagePullPolicy: Always
